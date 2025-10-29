@@ -3,7 +3,7 @@ export const fetch_ayurvedic = async () => {
 
   try {
 
-    const response = await fetch("https://naturescurezone-qc1n.onrender.com/api/plants/category/ayurveda");
+    const response = await fetch("https://naturescure.vercel.app/api/plants/category/ayurveda");
 
 
 
@@ -31,7 +31,7 @@ export const fetch_unani = async () => {
 
   try {
 
-    const response = await fetch("https://naturescurezone-qc1n.onrender.com/api/plants/category/unani");
+    const response = await fetch("https://naturescure.vercel.app/api/plants/category/unani");
 
 
 
@@ -59,7 +59,7 @@ export const fetch_siddha = async () => {
 
   try {
 
-    const response = await fetch("https://naturescurezone-qc1n.onrender.com/api/plants/category/siddha");
+    const response = await fetch("https://naturescure.vercel.app/api/plants/category/siddha");
 
 
 
@@ -88,7 +88,7 @@ export const fetch_naturopathy = async () => {
 
   try {
 
-    const response = await fetch("https://naturescurezone-qc1n.onrender.com/api/plants/category/naturopathy");
+    const response = await fetch("https://naturescure.vercel.app/api/plants/category/naturopathy");
 
 
 
@@ -116,7 +116,7 @@ export const fetch_homeopathy = async () => {
 
   try {
 
-    const response = await fetch("https://naturescurezone-qc1n.onrender.com/api/plants/category/homeopathy");
+    const response = await fetch("https://naturescure.vercel.app/api/plants/category/homeopathy");
 
 
 

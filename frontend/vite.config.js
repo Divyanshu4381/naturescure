@@ -9,7 +9,7 @@ export default defineConfig({
       strict:false
     },
     proxy:{
-      '/api':"https://naturescurezone-qc1n.onrender.com"
+      '/api':"https://naturescure.vercel.app"
     }
   },
   plugins: [react()],
