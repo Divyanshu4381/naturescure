@@ -1,18 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  plugins: [react()],
   server: {
-    // host: "0.0.0.0",
-    fs: {
-      strict: false
-    },
+    fs: { strict: false },
     proxy: {
-      '/api': "https://naturescure.vercel.app"
+      '/api': {
+        target: 'https://naturescure.vercel.app',
+        changeOrigin: true,
+        secure: false
+      }
     }
   },
-  plugins: [react()],
   build: {
     outDir: 'dist',
     chunkSizeWarningLimit: 1000,
@@ -20,12 +20,10 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          // Agar aap koi aur large packages use kar rahe hain to yahan add karein
-          // example: 
-          // ui: ['react-router-dom'],
-          // utils: ['axios', 'lodash']
+          // agar aur large packages ho to yahan add karo
         }
       }
     }
-  }
+  },
+  base: './', // ✅ Important: relative paths (404 fix)
 })
